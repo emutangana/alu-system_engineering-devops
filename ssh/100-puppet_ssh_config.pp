@@ -1,3 +1,4 @@
+# Configure the SSH client to use a private key and disable password auth
 file_line { 'Turn off passwd auth':
   path  => '/etc/ssh/ssh_config',
   line  => 'PasswordAuthentication no',
